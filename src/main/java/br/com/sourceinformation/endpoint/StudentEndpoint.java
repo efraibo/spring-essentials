@@ -15,6 +15,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import javax.validation.Valid;
+
 /**
  * @author William Suane for DevDojo on 6/5/17.
  */
@@ -49,7 +51,7 @@ public class StudentEndpoint {
     }
 
     @PostMapping
-    public ResponseEntity<?> save(@RequestBody Student student) {
+    public ResponseEntity<?> save(@Valid @RequestBody Student student) {
         return new ResponseEntity<>(repository.save(student), HttpStatus.CREATED);
     }
 
