@@ -1,4 +1,4 @@
-package br.com.sourceinformation.endpoint.error;
+package br.com.sourceinformation.error;
 
 /**
  * @author William Suane for DevDojo on 6/8/17.
