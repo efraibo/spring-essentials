@@ -1,8 +1,5 @@
 package br.com.sourceinformation.error;
 
-/**
- * @author William Suane for DevDojo on 6/8/17.
- */
 public class CustomErrorType {
     private String errorMessage;
 
